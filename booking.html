@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Class — Deutsch Lernen</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">
+        <span class="flag-chip"><span></span><span></span><span></span></span>
+        <span>
+          <span class="logo-main">Deutsch Lernen</span>
+          <span class="logo-sub">German Language School</span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="booking.html" class="active">Book a Class</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm">Login / Register</a>
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Book a Class</div>
+      <h1>Book Your German Class</h1>
+      <p>Fill in the details below to reserve your seat.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container booking-layout">
+
+      <!-- ===== Booking form ===== -->
+      <div class="booking-form-card">
+        <h2>Reservation Details</h2>
+        <p>All fields marked <span class="required">*</span> are required.</p>
+
+        <form id="bookingForm" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" />
+              <span class="form-error" id="fullNameError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="levelSelect">Course Level</label>
+              <select id="levelSelect" name="level" disabled>
+                <option value="">Select a course first</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="courseSelect">Course <span class="required">*</span></label>
+              <select id="courseSelect" name="course">
+                <option value="">Select course</option>
+              </select>
+              <span class="form-error" id="courseSelectError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+              <span class="form-error" id="phoneError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="scheduleSelect">Class Schedule</label>
+              <select id="scheduleSelect" name="schedule" disabled>
+                <option value="">Select course first</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-field full">
+              <label for="message">Additional Message (Optional)</label>
+              <textarea id="message" name="message" placeholder="Type your message..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+        </form>
+      </div>
+
+      <!-- ===== Sidebar info ===== -->
+      <div>
+        <div class="info-card">
+          <h3>Booking Information</h3>
+          <div class="info-row">
+            <span class="feature-icon">&#128197;</span>
+            <p>After you submit the form, we will confirm your booking instantly on the next page and by email.</p>
+          </div>
+          <div class="info-row">
+            <span class="feature-icon">&#128176;</span>
+            <p>Payment is collected on your first day of class — no payment is required to reserve a seat.</p>
+          </div>
+          <div class="info-row">
+            <span class="feature-icon">&#9203;</span>
+            <p>Seats are limited and reserved on a first-come, first-served basis.</p>
+          </div>
+
+          <div class="info-banner">
+            <span class="flag-chip"><span></span><span></span><span></span></span>
+            <p style="margin:0;font-size:0.9rem;">Questions before you book?<br /><a href="contact.html" style="color:var(--gold);font-weight:700;">Contact our team &rarr;</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Deutsch Lernen</h4>
+          <p>A German language school helping students reach A1 to C1 fluency through structured, flexible, and friendly classes.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="booking.html">Book a Class</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Levels</h4>
+          <ul>
+            <li><a href="courses.html">A1 Beginner</a></li>
+            <li><a href="courses.html">A2 Elementary</a></li>
+            <li><a href="courses.html">B1 Intermediate</a></li>
+            <li><a href="courses.html">B2 / C1 Advanced</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>123 Bangna, Bangkok 10260</li>
+            <li>Natchanitt@gmail.com</li>
+            <li>+66 886326232</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Deutsch Lernen German Language School. All rights reserved.</span>
+        <span>Built as a Fundamental Web Dev (HTML5 &amp; CSS3) course project.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

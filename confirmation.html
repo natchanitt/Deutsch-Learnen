@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Confirmed — Deutsch Lernen</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">
+        <span class="flag-chip"><span></span><span></span><span></span></span>
+        <span>
+          <span class="logo-main">Deutsch Lernen</span>
+          <span class="logo-sub">German Language School</span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="booking.html">Book a Class</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm">Login / Register</a>
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container confirm-wrap">
+      <div class="confirm-icon">&#10003;</div>
+      <span class="confirm-ref" id="confirmRef">Booking Reference</span>
+      <h1 class="section-title" style="margin-top:6px;">Thank you, <span id="confirmName"></span>!</h1>
+      <p class="section-sub" style="margin:0 auto 0;">Your class is reserved. We've saved a copy of these details below — a confirmation email will follow shortly.</p>
+
+      <div class="confirm-card" id="confirmSummary">
+        <!-- Filled in automatically by js/script.js from the booking form data -->
+      </div>
+
+      <div class="confirm-actions">
+        <a href="index.html" class="btn btn-outline">Back to Home</a>
+        <a href="courses.html" class="btn btn-primary">Browse More Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:18px;">
+        <span>&copy; 2026 Deutsch Lernen German Language School. All rights reserved.</span>
+        <span>Built as a Fundamental Web Dev (HTML5 &amp; CSS3) course project.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
